@@ -1,7 +1,6 @@
 let issueContainerEl = document.querySelector("#issues-container");
 let limitWarningEl = document.querySelector("#limit-warning");
 let repoNameEl = document.querySelector("#repo-name");
-let queryString = document.location.search;
 
 let getRepoIssues = function (repo) {
     let apiUrl = "https://api.github.com/repos/" + repo + "/issues?direction=asc";
